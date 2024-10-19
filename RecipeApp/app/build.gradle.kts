@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -50,6 +51,9 @@ android {
 }
 
 dependencies {
+
+    //navigation
+    implementation("androidx.navigation:navigation-compose:2.7.4")
 
     //compose viewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
